@@ -127,3 +127,5 @@ def get_product_detail(product_id: int, db: Session = Depends(get_db)):
         "best_price": best_price,
         "offers": offers
     }
+
+app = app
