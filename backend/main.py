@@ -71,17 +71,17 @@ def get_product_detail(product_id: int):
                 {
                     "store": "MediaMarkt",
                     "price": 1249.0,
-                    "url": "https://example.com/mediamarkt-g305"
+                    "url": "https://www.mediamarkt.com.tr/"
                 },
                 {
                     "store": "Amazon TR",
                     "price": 1299.9,
-                    "url": "https://example.com/amazon-g305"
+                    "url": "https://www.amazon.com.tr/"
                 },
                 {
                     "store": "Teknosa",
                     "price": 1349.0,
-                    "url": "https://example.com/teknosa-g305"
+                    "url": "https://www.teknosa.com/"
                 }
             ]
         }
