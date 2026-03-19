@@ -1,11 +1,7 @@
-import sys
-import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
-from scraper.sample_data import get_sample_products, normalize_name
+from sample_data import get_sample_products, normalize_name
 
 app = FastAPI()
 
