@@ -18,13 +18,20 @@ export default function ProductPage() {
   }, [id]);
 
   if (!data) {
-    return <div className="min-h-screen bg-black text-white p-10">Yükleniyor...</div>;
+    return (
+      <div className="min-h-screen bg-black text-white p-10">
+        Yükleniyor...
+      </div>
+    );
   }
 
   return (
     <div className="min-h-screen bg-black text-white p-10">
       <h1 className="text-3xl font-bold mb-4">{data.name}</h1>
-      <p className="text-green-400 font-bold mb-6">En ucuz: {data.best_price} TL</p>
+
+      <p className="text-green-400 font-bold mb-6">
+        En ucuz: {data.best_price} TL
+      </p>
 
       <div className="space-y-3">
         {data.offers.map((offer: any, index: number) => (
@@ -41,9 +48,9 @@ export default function ProductPage() {
               href={offer.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 px-3 py-2 rounded text-sm"
+              className="bg-green-500 px-3 py-2 rounded text-sm"
             >
-              Satın al
+              Mağazaya Git
             </a>
           </div>
         ))}

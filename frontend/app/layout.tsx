@@ -31,3 +31,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata = {
+  title: "Fiyat Karşılaştırma",
+  description: "En ucuz ürünleri bul",
+};

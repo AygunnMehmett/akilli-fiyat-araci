@@ -45,7 +45,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center p-10">
-      <h1 className="text-3xl font-bold mb-6">💸 Akıllı Fiyat Karşılaştırma</h1>
+      
+      {/* LOGO */}
+      <img src="/logo.png" className="w-12 mb-2" />
+
+      <h1 className="text-3xl font-bold mb-6">
+        💸 Akıllı Fiyat Karşılaştırma
+      </h1>
 
       <div className="flex gap-2 mb-6">
         <input
@@ -76,8 +82,12 @@ export default function Home() {
             </div>
 
             <div className="text-right">
-              <p className="text-green-400 font-bold">{item.best_price} TL</p>
-              <p className="text-xs text-gray-400">En ucuz fiyat</p>
+              <p className="text-green-400 font-bold">
+                {item.best_price} TL
+              </p>
+              <p className="text-xs text-gray-400">
+                En ucuz fiyat
+              </p>
             </div>
           </div>
         ))}
