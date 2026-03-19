@@ -13,7 +13,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const res = await fetch(`http://127.0.0.1:8000/search?q=${query}`);
+      const res = await fetch(`https://akilli-fiyat-araci-t9eq.vercel.app/search?q=${query}`);
       const data = await res.json();
 
       const grouped = Object.values(

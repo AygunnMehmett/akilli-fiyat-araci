@@ -12,7 +12,7 @@ export default function ProductPage() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://127.0.0.1:8000/products/${id}`)
+    fetch(`https://akilli-fiyat-araci-t9eq.vercel.app/products/${id}`)
       .then((res) => res.json())
       .then((json) => setData(json));
   }, [id]);
